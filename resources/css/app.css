@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+	:root {
+		--wd-bg: #070a12;
+		--wd-surface: rgba(255, 255, 255, 0.05);
+		--wd-surface-2: rgba(255, 255, 255, 0.07);
+		--wd-border: rgba(255, 255, 255, 0.12);
+		--wd-text: rgba(255, 255, 255, 0.92);
+		--wd-muted: rgba(255, 255, 255, 0.62);
+
+		/* WD Games neon accent (sync with landing vibe) */
+		--wd-accent: #b6ff00;
+		--wd-accent-10: rgba(182, 255, 0, 0.10);
+		--wd-accent-20: rgba(182, 255, 0, 0.20);
+		--wd-accent-35: rgba(182, 255, 0, 0.35);
+
+		/* Secondary accent for gradients */
+		--wd-accent-2: #00ffa3;
+		--wd-accent-2-10: rgba(0, 255, 163, 0.10);
+	}
+
+	html {
+		color-scheme: dark;
+	}
+
+	body {
+		background: var(--wd-bg);
+		color: var(--wd-text);
+		font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+	}
+}
+
+@layer components {
+	.wd-brand {
+		font-family: Orbitron, ui-sans-serif, system-ui;
+		letter-spacing: 0.02em;
+	}
+}
